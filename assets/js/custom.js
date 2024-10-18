@@ -1,32 +1,24 @@
-/*
-Theme: Termoelétrica
-Description: Free to use for personal and commercial use
-Author: WebThemez.com
-Website: http://webthemez.com
-Note: Please do not remove the footer backlink (webthemez.com)--(if you want to remove : webthemez@gmail.com)
-Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/licenses/by/3.0/
-*/
 jQuery(document).ready(function ($) {
-//da slider
-	$('#da-slider').cslider({
-		autoplay: true,
-		bgincrement: 0
-	});
-//Set the carousel options
-	$('#quote-carousel').carousel({
-		pause: true,
-		interval: 4000,
-	});
-// fancybox
+
+    $('#da-slider').cslider({
+        autoplay: true,
+        bgincrement: 0
+    });
+
+    $('#quote-carousel').carousel({
+        pause: true,
+        interval: 4000,
+    });
+
     $(".fancybox").fancybox();
-//isotope
+
     if ($('.isotopeWrapper').length) {
         var $container = $('.isotopeWrapper');
         var $resize = $('.isotopeWrapper').attr('id');
-        // initialize isotope
+
         $container.isotope({
             itemSelector: '.isotopeItem',
-            resizable: false, // disable normal resizing
+            resizable: false,
             masonry: {
                 columnWidth: $container.width() / $resize
             }
@@ -54,12 +46,12 @@ jQuery(document).ready(function ($) {
             });
             return false;
         });
-		$(window).load(function() { 
-			  $('#filter .current').trigger('click');
-		});
+        $(window).load(function () {
+            $('#filter .current').trigger('click');
+        });
         $(window).smartresize(function () {
             $container.isotope({
-                // update columnWidth to a percentage of container width
+
                 masonry: {
                     columnWidth: $container.width() / $resize
                 }
