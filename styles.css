@@ -1,0 +1,638 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #58B036;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 300px; 
+    height: auto; 
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #5de527;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Checkbox oculto */
+.menu-toggle {
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #58B036;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.footer-nav a:hover {
+    background-color: #5de527; 
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px; /* Define a largura máxima para quebrar o texto */
+    
+   
+line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #58B036;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #5de527;
+}
+
+/* Container principal da introdução */
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Estilização do texto da introdução */
+.intro-text {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-right: 30px; /* Espaço à direita do texto */
+    text-align: justify; /* Justifica o texto */
+    
+}
+
+.highlight {
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.verde {
+    color: green; /* Cor verde para parte do texto */
+    font-size: 100px;
+}
+
+.preto {
+    color: black; /* Cor preta para parte do texto */
+    font-size: 100px;
+}
+
+/* Estilo da imagem na introdução */
+.image-preview {
+    flex: 0 0 40%; /* A imagem ocupa 40% da largura disponível */
+    display: flex;
+    justify-content: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Container principal para texto e imagem */
+.infraestrutura-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do bloco de texto */
+.infraestrutura-texto {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-right: 20px; /* Espaço à direita do texto */
+}
+
+.infraestrutura-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #58B036;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.infraestrutura h3 {
+    color: #58B036;
+    margin: 0 0 10px;
+}
+
+.infraestrutura p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Container da imagem */
+.infraestrutura-imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* A imagem ocupará 40% da largura disponível */
+}
+
+/* Estilo da imagem */
+.infraestrutura-imagem {
+    max-width: 100%; /* A imagem ocupará todo o espaço disponível no container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
+}
+
+/* Container principal para a imagem e o texto */
+.impactos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do bloco de texto */
+.impactos-texto {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-left: 20px; /* Espaço à esquerda do texto */
+}
+
+.impacto {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #58B036;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.impacto h3 {
+    color: #58B036;
+    margin: 0 0 10px;
+}
+
+.impacto p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Container da imagem */
+.impacto-imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* A imagem ocupará 40% da largura disponível */
+    padding-right: 20px;
+}
+
+.impacto-imagem {
+    max-width: 100%; /* A imagem ocupará todo o espaço disponível no container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
+}
+
+.opportunities {
+    text-align: center;
+    margin-bottom: 40px; /* Espaço entre o título principal e as colunas */
+}
+
+.opportunities__title-main {
+    font-size: 44px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.opportunities__title-main2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.opportunities {
+    position: relative;
+  }
+  
+  .opportunities__img {
+    position: absolute;
+    left: -1.5rem;
+    top: -16rem;
+    z-index: -1;
+  }
+  
+  .opportunities__img img {
+    max-height: 55rem;
+    max-width: 16rem;
+  }
+  
+  .opportunities__content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid #f7f7f7;
+    margin-bottom: 4rem;
+  }
+  
+  .opportunities__head {
+    text-align: center;
+    max-width: 70rem;
+    margin: 0 auto 10rem;
+  }
+  
+  .opportunities__title {
+    font-size: 3.6rem;
+    color: #000000;
+  }
+  
+  .opportunities__description {
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #263238;
+  }
+  
+  .opportunities__body {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+    justify-content: center; /* Centraliza os cartões */
+}
+
+.opportunity {
+    width: 25%; /* Reduz a largura dos cartões */
+    background-color: #ffffff;
+    border-radius: .5rem;
+    padding: 4rem 2rem; /* Ajusta o espaçamento interno */
+    transition: all 0.3s ease-out;
+}
+
+.opportunity__title {
+    font-size: 1.6rem; /* Diminui o tamanho da fonte do título */
+    color: #263238;
+    margin: 2rem 0; /* Ajusta o espaçamento entre o título e o conteúdo */
+}
+
+.opportunity__description {
+    font-size: 1.4rem; /* Diminui o tamanho da fonte da descrição */
+    color: #263238;
+}
+
+/* Mantém a cor e estilo ao ativar */
+.opportunity.active {
+    background-color: #58B036;
+}
+
+.opportunity.active .opportunity__title,
+.opportunity.active .opportunity__description {
+    color: #ffffff;
+}
+  
+  .opportunity:hover {
+    transform: translateY(-2rem);
+  }
+  
+  .opportunity__icon {
+    max-height: 5.6rem;
+    width: initial;
+  }
+  
+  .opportunity__title {
+    font-size: 1.8rem;
+    color: #263238;
+    margin: 2.5rem 0;
+  }
+  
+  .opportunity__description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #263238;
+  }
+
+/* Container principal para a imagem e o texto */
+.coeficiente-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do bloco de texto */
+.coeficiente-texto {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-left: 20px; /* Espaço à esquerda do texto */
+}
+
+.coeficiente {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #58B036;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.coeficiente h3 {
+    color: #58B036;
+    margin: 0 0 10px;
+}
+
+.coeficiente p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Container da imagem */
+.coeficiente-imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* A imagem ocupará 40% da largura disponível */
+    padding-right: 20px;
+}
+
+.coeficiente-imagem {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+h2{
+    height: 50px;
+}
+
+h3{
+    color: #58B036;
+}
+
+.explore__wrapper {
+    position: relative; /* Para posicionar os controles */
+    overflow: hidden; /* Esconde imagens que saem da tela */
+    max-width: 100%; /* Ajusta a largura do carrossel */
+}
+
+.explore__wrapper-inner {
+    display: flex; /* Alinha as imagens em uma linha */
+    width: 400%; /* Ajuste para permitir o deslocamento das imagens */
+    animation: slide 40s infinite; /* Animação de deslizar a cada 20 segundos */
+}
+
+.slide {
+    min-width: 25%; /* Cada imagem ocupa 25% do espaço (4 imagens) */
+}
+
+.explore__wrapper-inner img {
+    width: 100%; /* Ajusta a imagem para preencher o slide */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); } /* Mantém a primeira imagem visível */
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); } /* Mantém a segunda imagem visível */
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); } /* Mantém a terceira imagem visível */
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); } /* Mantém a quarta imagem visível */
+    100% { transform: translateX(0); } /* Volta para a primeira imagem */
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-width: 200px; /* Ajusta o tamanho do logo */
+    }
+
+    nav {
+        display: none; /* Esconde o nav para a versão mobile */
+    }
+
+    .hamburger {
+        display: flex; /* Mostra o botão de menu */
+    }
+
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        padding-right: 0;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .infraestrutura-container,
+    .impactos-container,
+    .coeficiente-container {
+        flex-direction: column;
+    }
+
+    .infraestrutura-imagem-container,
+    .impacto-imagem-container,
+    .coeficiente-imagem-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .opportunities__title-main, 
+    .opportunities__title-main2 {
+        font-size: 24px; /* Reduz o tamanho dos títulos */
+    }
+
+    .opportunity {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: clamp(1.5rem, 3vw, 2rem); /* Ajuste o tamanho da fonte */
+    }
+
+    .intro-content h1.verde, .intro-content h1.preto {
+        font-size: clamp(2rem
+        , 6vw, 4rem); /* Tamanho do título responsivo */
+    }
+
+    .intro-text p,
+    .infraestrutura p,
+    .impacto p {
+        font-size: clamp(0.9rem, 3vw, 1.2rem); /* Texto proporcional */
+    }
+    .verde, .preto {
+            font-size: clamp(2rem, 6vw, 4rem); /* Tamanho responsivo */
+        }
+}
+
+@media (max-width: 480px) {
+    .opportunities {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .opportunities__title-main,
+    .opportunities__title-main2 {
+        font-size: 6vw; /* Ajusta o tamanho do texto para ocupar a largura da tela */
+        line-height: 1.2;
+    }
+
+    .opportunities__body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+    .opportunity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f4f4f4; /* Adicione um fundo leve para destacar */
+    }
+
+    .opportunity__icon {
+        max-width: 60px; /* Ajusta o tamanho do ícone */
+        height: auto;
+    }
+
+    .opportunity__title {
+        font-size: 5vw; /* Ajusta o tamanho do título */
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .opportunity__description {
+        font-size: 4vw; /* Ajusta o tamanho da descrição */
+        text-align: justify;
+        padding: 5px;
+    }
+
+    /* Ajuste das imagens */
+    .image-preview img,
+    .infraestrutura-imagem,
+    .impacto-imagem,
+    .coeficiente-imagem {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Oculta a navegação principal */
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #58B036;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* Mostra o ícone do menu hambúrguer */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Exibe o menu quando o checkbox está marcado */
+    .menu-toggle:checked + .menu-icon + nav {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
